@@ -1,0 +1,433 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", Arial, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(22, 24, 35);
+    background-color: rgb(255, 255, 255);
+    overscroll-behavior: contain;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+    height: 60px;
+}
+.left-navbar-content{
+    display: flex;
+    align-items: center;
+}
+.input-search,.search-btn{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    caret-color: red;
+}
+.input-search{
+    margin-left: 5px;
+    width: 100%;
+    background-color: transparent;
+}
+.search-btn{
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.input-search:focus-visible{
+    outline: none;
+}
+.search-box .search-btn{
+    width: 20%;
+}
+.search-area{
+    border-radius:50px;
+    border: white solid 1px;
+}
+.search-area:hover{
+    border: rgba(22, 24, 35, 0.24) solid 1px;
+}
+.search-area:hover .background-hover{
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: -49px;
+    height: 100px;
+    background-color: rgb(22 24 35 / 8%);;
+}
+.search-icon{
+    padding-left: 5px;
+    margin-right: 5px;
+}
+.search-area:hover .search-icon{
+    fill: black;
+}
+.content-navbar{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 1150px !important;
+    padding-right: 24px;
+    padding-left: 20px;
+}
+.search-box{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 8.5px 10px;
+    border-radius: 92px;
+    background: rgba(22, 24, 35, 0.06);
+    border: 1px rgba(22, 24, 35, 0.12);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0px;
+}
+.center-navbar-content{
+    width: 22.2%;
+    border: gray;
+}
+.line-up{
+    width: 1px !important;
+    height: 28px !important;
+    margin-left: 0 10px;
+    background: rgba(22, 24, 35, 0.12);
+}
+.upload-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgba(128, 128, 128, 0.341) 1px solid;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: rgb(22, 24, 35);
+    font-size: 16px;
+}
+.upload-btn svg{
+    padding: 0 5px 0 0;
+    width: 20px;
+    height: auto;
+}
+.inside{
+    display: flex;
+    align-items: center;
+}
+.upload-btn:hover{
+    background-color: rgba(22, 24, 35, 0.06);;
+}
+.messages, .inbox{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.avatar{
+    margin-left: 15px;
+}
+.inside .avt{
+    width: 30px;
+}
+.cirle{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    border-radius: 50px;
+    width: 44px;
+}
+.cirle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+}
+.hover-infor{
+    display: none;
+}
+.box-show{
+    position: absolute;
+    background-color: rgba(84, 84, 84, 0.92);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    padding: 8px;
+}
+.left-mess{
+    top: 40px;
+    right: -35px;
+}
+.right-inbox{
+    top: 44px;
+    right: -15px;
+}
+.hover-infor svg{
+    position: absolute;
+}
+.mess svg{
+    right: -9px;
+    top: 32px;
+}
+.ib svg{
+    right: -2px;
+    top: 36px;
+}
+.messages:hover .mess{
+    display: block !important;
+}
+.inbox:hover .ib{
+    display: block !important;
+}
+.faq-hover{
+    top: -47px;
+    right: -58px;
+    width: 150px;
+    font-size: 14px !important;
+}
+.faq:hover .fh-hover{
+    display: block !important;
+}
+/* Main Content */
+
+.main-content{
+    margin-top: 120px !important;
+    width: 1150px;
+    margin: auto;
+    position: relative;
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    width: 100%;
+    height: 24px;
+}
+.top-content h1{
+    color: rgb(22, 24, 35);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0px;
+}
+.top-content a{
+    color: rgb(22, 24, 35);
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.03px;
+    text-decoration: none;
+    line-height: 22px;
+}
+.banner-avatar{
+    display: flex;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    gap: 8px;
+}
+.main-banner-avatar{
+    max-width: 100%;
+    min-width: 225px;
+    width: max-content;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    -webkit-box-pack: start;
+    place-content: center flex-start;
+    background: rgba(22, 24, 35, 0.03);
+    border-radius: 4px;
+}
+/* .profile-icon{
+    width: 44px !important;
+    height: 41px !important; 
+} */
+.infor-banner{
+    padding-left: 13px;
+}
+.divInfor{
+    display: flex;
+    align-items: center;
+}
+.wallet-username{
+    color: rgb(22, 24, 35);
+    font-family:  Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.028px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+.wallet-coins{
+    color: rgba(22, 24, 35, 0.5);
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Tahoma,  sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.093px;
+    height: 18px;
+}
+.coin-recipient{
+    margin:30px 0 15px 0;
+    width: 40%;
+}
+.coin-recipient span{
+    color: rgb(22, 24, 35);
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.03px;
+    text-decoration: none;
+    line-height: 22px;
+
+}
+.coin-recipient form{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.recharge{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.028px;
+    line-height: 1.2;
+}
+.recharge h1, .recharge b{
+    font-size: 18px;
+}
+.recharge b{
+    margin-left: 5px;
+    color: rgb(254, 44, 85);
+}
+.main-chose{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    cursor: pointer;
+    max-width: 212.5px !important;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    width: calc(25% - 77px);
+    margin-left: 100px;
+    margin-top: 30px;
+    
+}
+
+.group-chose{
+    padding: 20px;
+}
+
+.item:nth-child(4n+1){
+    margin-left: 0;
+}
+
+.infor-coin-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.group-chose span{
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+.price{
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 700;
+    font-size: 14px;
+}
+.infor-coin-up span{
+    font-family:  Arial, Tahoma, sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.24px;
+    line-height: 1.2;
+    display: inline-block;
+    color: rgb(22, 24, 35);
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 0px;
+    font-weight: 700;
+    margin-top: 0 !important;
+    align-items: center;
+}
+.main-chose .active{
+    border: 1px solid rgb(250, 206, 21);
+}
+#inputPrice{
+    width: 72%;
+    border: none;
+    border-bottom: 1px solid black !important;
+}
+#inputPrice:focus-visible{
+    outline: none;
+}
+.payment ul{
+    display: flex;
+    padding: 0;
+}
+.payment ul li{
+    list-style: none;
+    font-size: 16px;
+    margin-left: 2px;
+}
+span{
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 355px;
+    bottom: 50px;
+    position: fixed;
+    height: 47px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(203, 204, 206);
+    border-radius: 50%;
+}
+.fh{
+    position: absolute;
+    transform: rotate(180deg);
+    top: -10px;
+    right: 6px;
+}
